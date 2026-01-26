@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Measure FLOPs and wall-clock time for JAX agents.
 

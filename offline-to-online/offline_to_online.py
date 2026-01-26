@@ -63,7 +63,7 @@ def main(_):
     if FLAGS.enable_wandb:
         setup_wandb(
             wandb_output_dir=FLAGS.save_dir,
-            project='nql', group=FLAGS.wandb_run_group, name=exp_name,
+            project='fan', group=FLAGS.wandb_run_group, name=exp_name,
             mode=FLAGS.wandb_mode
         )
     flag_dict = get_flag_dict()
