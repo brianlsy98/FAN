@@ -17,16 +17,6 @@
 
 We overcome the high computational costs of flow policies and distributional critics, by proposing (1) Flow Anchoring, and (2) the noise-conditioned Q-function trained through the operator $\mathcal{T}_n^\pi$.
 
-
-## Main Takeaway
-
-FAN achieves state-of-the-art offline RL results with high computational efficiency.
-
-<img src="assets/FAN_PerfvsRuntime.png" width="100%">
-
-(average success rates on 5 tasks in OGBench `puzzle-4x4-play`)
-
-
 ## Installation
 
 1. Create an Anaconda environment
