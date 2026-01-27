@@ -9,13 +9,13 @@
     </summary>
   </ul>
 </div>
-<img src="assets/FAN_Summary.png" width="100%">
+<img src="assets/FAN_Summary.png" width="80%">
 
 </div>
 
 ## TL;DR
 
-We overcome the high computational costs of flow policies and distributional critics, by proposing (1) Flow Anchoring, and (2) the noise-conditioned Q-function trained through the operator $\mathcal{T}_n^\pi$.
+FAN achieves state-of-the-art offline RL performance while overcoming the high computational costs of flow policies and distributional critics. This is attributed to (1) Flow Anchoring, and (2) the noise-conditioned critic defined by the operator $\mathcal{T}_n^\pi$.
 
 ## Installation
 
