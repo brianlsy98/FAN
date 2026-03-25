@@ -15,7 +15,7 @@
 
 ## TL;DR
 
-FAN achieves state-of-the-art offline RL performance while overcoming the high computational costs of flow policies and distributional critics. This is attributed to (1) Flow Anchoring, and (2) the noise-conditioned critic defined by the operator $\mathcal{T}_n^\pi$.
+FAN achieves SOTA offline RL performance while overcoming the high costs of flow policies and distributional critics. This success is attributed to (1) Flow Anchoring, and (2) the noise-conditioned critic defined by operator $\mathcal{T}_n^\pi$.
 
 ## Installation
 
