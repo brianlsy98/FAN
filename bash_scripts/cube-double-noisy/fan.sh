@@ -10,7 +10,7 @@ for seed in 0 1; do
                 echo "--- Running task: $task with (alpha1,alpha2,expectile,er_coeff,zmax_coeff): ($alpha1,$alpha2,$expectile,$er_coeff,$zmax_coeff) ---"
                 python main.py \
                   --seed=${seed} \
-                  --env_name=cube-double-play-singletask-${task}-v0 \
+                  --env_name=cube-double-noisy-singletask-${task}-v0 \
                   --agent=agents/${agent_name}.py \
                   --agent.alpha1=${alpha1} \
                   --agent.alpha2=${alpha2} \
