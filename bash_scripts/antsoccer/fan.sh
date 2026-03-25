@@ -1,4 +1,4 @@
-for seed in 0 1; do
+for seed in 0; do
   for task in task2 task3 task4 task5; do
     for agent_name in fan; do
       for alpha1 in 10; do
@@ -26,8 +26,4 @@ for seed in 0 1; do
       done
     done
   done  
-done
-      done
-    done
-  done
 done
