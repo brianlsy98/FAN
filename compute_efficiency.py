@@ -133,8 +133,8 @@ def force_encoder_none(cfg):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--agents_dir", type=str, default="./agents")
-    parser.add_argument("--obs_dim", type=int, default=32)
-    parser.add_argument("--action_dim", type=int, default=7)
+    parser.add_argument("--obs_dim", type=int, default=37)
+    parser.add_argument("--action_dim", type=int, default=5)
     parser.add_argument("--batch", type=int, default=256)
     parser.add_argument("--runs", type=int, default=50)
     parser.add_argument("--seed", type=int, default=0)

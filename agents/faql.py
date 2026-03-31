@@ -276,6 +276,8 @@ def get_config():
             q_agg='mean',      # Aggregation method for target Q values.
             alpha1=10.0,       # Actor BC Flow Anchoring coefficient (need to be tuned for each environment).
             alpha2=0.1,        # Critic BC Flow Anchoring coefficient (need to be tuned for each environment).
+            online_alpha1=10.0, # Online actor BC Flow Anchoring coefficient.
+            online_alpha2=0.1, # Online critic BC Flow Anchoring coefficient.
             normalize_value_loss=False,  # Whether to normalize the Q loss.
             flow_steps=10,  # Number of flow steps.
             encoder=ml_collections.config_dict.placeholder(str),  # Visual encoder name (None, 'impala_small', etc.).

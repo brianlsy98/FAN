@@ -137,7 +137,7 @@ def main(_):
                 agent, update_info = agent.update(batch)
         else:
             if i == FLAGS.offline_steps + 1:
-                if config['agent_name'] == 'fan':
+                if config['agent_name'] == 'fan' or config['agent_name'] == 'faql':
                     config_dict = flax.core.unfreeze(agent.config)
                     config_dict['alpha1'] = config_dict['online_alpha1']
                     config_dict['alpha2'] = config_dict['online_alpha2']

@@ -63,7 +63,7 @@ class FANAgent(flax.struct.PyTreeNode):
         target_z = target_zs.mean(axis=0)
         z_loss = self.expectile_loss(target_z - z, target_z - z, expectile=self.config['expectile']).mean()
 
-        critic_loss = q_loss + self.config['er_coeff'] * z_loss
+        critic_loss = q_loss + z_loss
         
         return critic_loss, {
             'critic_loss': critic_loss,
@@ -123,8 +123,7 @@ class FANAgent(flax.struct.PyTreeNode):
             z_loss = lam * z_loss
 
         # Total loss.
-        actor_loss = bc_flow_loss + self.config['alpha1'] * br_loss\
-                    + q_loss + self.config['zmax_coeff'] * z_loss
+        actor_loss = bc_flow_loss + self.config['alpha1'] * br_loss + q_loss + z_loss
 
         # Additional metrics for logging.
         actions = self.sample_actions(batch['observations'], seed=rng)
@@ -326,8 +325,6 @@ def get_config():
             online_alpha1=10.0, # Online Actor BC Flow Anchoring fine-tuning coefficient.
             online_alpha2=0.0, # Online Critic BC Flow Anchoring fine-tuning coefficient.
             expectile=0.9,     # Expectile for loss computation.
-            er_coeff=1.0,      # Expectile Regression coefficient.
-            zmax_coeff=1.0,    # Z-max coefficient.
             normalize_value_loss=False,  # Whether to normalize the value loss.
             encoder=ml_collections.config_dict.placeholder(str),  # Visual encoder name (None, 'impala_small', etc.).
         )
