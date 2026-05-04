@@ -1,3 +1,4 @@
+# Dataset container and sampling helpers for offline RL replay data.
 from functools import partial
 
 import jax

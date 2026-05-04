@@ -1,3 +1,4 @@
+# Evaluation helpers for rollout execution and metric aggregation.
 from collections import defaultdict
 
 import jax

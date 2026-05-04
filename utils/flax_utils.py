@@ -1,3 +1,4 @@
+# Flax/JAX helpers for module wiring, training state, and checkpoints.
 import functools
 import glob
 import os

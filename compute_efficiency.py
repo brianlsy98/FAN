@@ -1,3 +1,4 @@
+# Benchmark script for measuring FLOPs and runtime.
 """
 Measure FLOPs and wall-clock time for JAX agents.
 

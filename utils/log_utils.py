@@ -1,3 +1,4 @@
+# Logging helpers for CSV metrics, experiment naming, and WandB artifacts.
 import os
 import tempfile
 from datetime import datetime

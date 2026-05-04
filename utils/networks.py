@@ -1,3 +1,4 @@
+# Neural network building blocks for actors, critics, and distributions.
 from typing import Any, Optional, Sequence
 
 import distrax

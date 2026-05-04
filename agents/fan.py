@@ -1,3 +1,8 @@
+'''
+FAN (Flow-Anchored Noise-conditioned Q-learning):
+ - Behavior Regularization : Flow Anchoring
+ - Value Function Update   : Noise-conditioned Q-learning
+'''
 import copy
 from typing import Any
 

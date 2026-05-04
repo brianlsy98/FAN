@@ -1,3 +1,8 @@
+'''
+FAQL (Flow-Anchored Q-learning):
+ - Behavior Regularization : Flow Anchoring
+ - Value Function Update   : Q-learning
+'''
 import copy
 from typing import Any
 

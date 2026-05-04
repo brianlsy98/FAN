@@ -1,3 +1,8 @@
+'''
+NFQL (Noise-conditioned Flow Q-learning):
+ - Behavior Regularization : Flow Distillation (in FQL)
+ - Value Function Update   : Noise-conditioned Q-learning
+'''
 import copy
 from typing import Any
 

@@ -1,3 +1,4 @@
+# Encoder modules for turning observations into network feature vectors.
 import functools
 from typing import Sequence
 

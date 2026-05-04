@@ -1,3 +1,8 @@
+'''
+NBRAC (Noise-conditioned Behavior-Regularized Actor-Critic):
+ - Behavior Regularization : ReBRAC
+ - Value Function Update   : Noise-conditioned Q-learning
+'''
 import copy
 from typing import Any
 

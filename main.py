@@ -1,3 +1,4 @@
+# Main training entrypoint for offline FAN experiments.
 import os
 
 import json

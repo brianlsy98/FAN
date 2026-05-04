@@ -1,3 +1,4 @@
+# Training entrypoint for offline-to-online fine-tuning experiments.
 import os
 import platform
 import sys
